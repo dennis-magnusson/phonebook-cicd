@@ -20,8 +20,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - name: npm install
+      - name: npm install for root
         run: npm install
+      - name: npm install for ui
+        run: cd client && npm install
       - name: lint
         run: npm run eslint
       - name: build
