@@ -4,9 +4,6 @@ app = "full-stack-phonebook"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
-[processes]
-  app = "node index.js"
-
 [build]
   builder = "heroku/buildpacks:20"
 
